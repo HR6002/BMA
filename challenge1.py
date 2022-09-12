@@ -14,12 +14,17 @@ def walk(miles):
     mile=((miles)/3.1)*60
     return mile
 
-user=input("enter rods: ")
-print(f"""meters:{meters(user)} 
-feet: {feet(meters(user))}
-miles: {miles(meters(user))}
-furlongs: {furlongs(user)}
-walk: {walk(miles(meters(user)))}
-""")
+def userinput(user):
+ userr=float(user)
+ return userr
 
+def printing():
+ print(f""" meters:{meters(userinput(userrinput))} 
+ feet: {feet(meters(userinput(userrinput)))}
+ miles: {miles(meters(userinput(userrinput)))}
+ furlongs: {furlongs(userinput(userrinput))}
+ walking time in minutes : {walk(miles(meters(userinput(userrinput))))}
+ """)
 
+userrinput=input("enter number of rods: ")
+printing()
